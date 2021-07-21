@@ -7,7 +7,7 @@ The model provided here recognizes **98 landmarks** describing the entire face:
 Moreover, the folders:
 
 * `scripts\`: contains the Python scripts (1) used to generate the XML files needed by Dlib to train the model, (2) to train and evaluate the model, (3) to test the model detection on images.
-* `xml\`: contains pre-generated XML files for training and testing.
+* `xml\`: contains pre-generated XML files for training and testing, you have to unzip them before usage.
 
 ## Training Parameters
 

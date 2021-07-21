@@ -35,14 +35,14 @@ def measure_model_error(model, xml):
 
 if __name__ == '__main__':
 	train_model(name='wflw_98_landmarks.dat', 
-                xml=os.path.join('WFLW_images', 'labels_train2_WFLW.xml'),
+                xml=os.path.join('WFLW_images', 'labels_train_WFLW.xml'),
                 cascade_depth=10, pool_size=400, num_test_splits=50, oversampling=5)
 
 	# test (on training-set)
 	measure_model_error(model='wflw_98_landmarks.dat',
-	                    xml=os.path.join('WFLW_images', 'labels_train2_WFLW.xml'))
+	                    xml=os.path.join('WFLW_images', 'labels_train_WFLW.xml'))
 
 	# test (on test-set)
 	measure_model_error(model='wflw_98_landmarks.dat',
-	                    xml=os.path.join('WFLW_images', 'labels_test2_WFLW.xml'))
+	                    xml=os.path.join('WFLW_images', 'labels_test_WFLW.xml'))
         
